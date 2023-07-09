@@ -83,7 +83,7 @@ namespace InkBallBridge
         
         Platform::String^ ToString() override
         {
-            return "[BridgeMessage(MessageType=" + m_type.ToString() + "Data=" + m_data->ToString() + ")]";
+            return "[BridgeMessage(MessageType=" + m_type.ToString() + ",Data=" + m_data->ToString() + ")]";
         }
     };
 }
