@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IL2CPPToWinRTBridge", "IL2CPPToWinRTBridge\IL2CPPToWinRTBridge.vcxproj", "{419D8845-24D9-4A80-BF8C-C6E16A2FC547}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InkBallBridge", "InkBallBridge\InkBallBridge.vcxproj", "{30B3C67F-72F1-4CC0-BB8D-5C039E862387}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -33,6 +35,22 @@ Global
 		{419D8845-24D9-4A80-BF8C-C6E16A2FC547}.Release|x64.Build.0 = Release|x64
 		{419D8845-24D9-4A80-BF8C-C6E16A2FC547}.Release|x86.ActiveCfg = Release|Win32
 		{419D8845-24D9-4A80-BF8C-C6E16A2FC547}.Release|x86.Build.0 = Release|Win32
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Debug|ARM.ActiveCfg = Debug|ARM
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Debug|ARM.Build.0 = Debug|ARM
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Debug|ARM64.Build.0 = Debug|ARM64
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Debug|x64.ActiveCfg = Debug|x64
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Debug|x64.Build.0 = Debug|x64
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Debug|x86.ActiveCfg = Debug|Win32
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Debug|x86.Build.0 = Debug|Win32
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Release|ARM.ActiveCfg = Release|ARM
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Release|ARM.Build.0 = Release|ARM
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Release|ARM64.ActiveCfg = Release|ARM64
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Release|ARM64.Build.0 = Release|ARM64
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Release|x64.ActiveCfg = Release|x64
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Release|x64.Build.0 = Release|x64
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Release|x86.ActiveCfg = Release|Win32
+		{30B3C67F-72F1-4CC0-BB8D-5C039E862387}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
