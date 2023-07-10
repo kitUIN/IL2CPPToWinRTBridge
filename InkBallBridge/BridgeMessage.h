@@ -32,32 +32,22 @@ namespace InkBallBridge
         /// 请求
         /// </summary>
         Get,
+        /// <summary>
+        /// 球仓
+        /// </summary>
+        BallCounts,
+
     };
     public ref class BridgeMessage sealed
     {
     private:
         MessageType m_type;
         Platform::Object^ m_data;
-        Windows::Foundation::DateTime m_sendTime;
     public:
         BridgeMessage(MessageType _type, Platform::Object^ _data)
         {
             m_type = _type;
             m_data = _data;
-            SYSTEMTIME st;
-            GetSystemTime(&st);
-            FILETIME ft;
-            SystemTimeToFileTime(&st, &ft);
-            ULARGE_INTEGER uli;
-            uli.LowPart = ft.dwLowDateTime;
-            uli.HighPart = ft.dwHighDateTime;
-            m_sendTime.UniversalTime = uli.QuadPart;
-        }
-        BridgeMessage(MessageType _type, Platform::Object^ _data, Windows::Foundation::DateTime dt)
-        {
-            m_type = _type;
-            m_data = _data;
-            m_sendTime = dt;
         }
         /// <summary>
         /// 类型
@@ -72,13 +62,6 @@ namespace InkBallBridge
         property Platform::Object^ Data
         {
             Platform::Object^ get() { return m_data; }
-        }
-        /// <summary>
-        /// 发送时间
-        /// </summary>
-        property Windows::Foundation::DateTime SendTime
-        {
-            Windows::Foundation::DateTime get() { return m_sendTime; }
         }
         
         Platform::String^ ToString() override

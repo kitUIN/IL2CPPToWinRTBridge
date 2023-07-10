@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>InkBallBridge</id>
+    <version>0.1.0</version>
+    <title>InkBallBridge</title>
+    <authors>kitUIN</authors>
+    <owners>kitUIN</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/KitUIN/IL2CPPToWinRTBridge</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Communication between UWP and Unity</description>
+    <copyright>Copyright 2023-2023</copyright>
+    <tags>unity uwp</tags>
+    <dependencies>
+      <group targetFramework="UAP10.0" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- WinMd and IntelliSense files -->
+    <file src=".\x64\Release\InkBallBridge\InkBallBridge.winmd" target="lib\uap10.0"/>
+    <!-- DLLs and resources -->
+    <file src=".\x64\Release\InkBallBridge\InkBallBridge.winmd" target="lib\netstandard2.0\arm"/> 
+    <file src=".\ARM\Release\InkBallBridge\InkBallBridge.dll" target="lib\netstandard2.0\arm"/>
+    <file src=".\ARM\Release\InkBallBridge\InkBallBridge.dll" target="runtimes\arm\native"/>
+    <file src=".\ARM\Release\InkBallBridge\InkBallBridge.pri" target="runtimes\arm\native"/>
+
+    <file src=".\x64\Release\InkBallBridge\InkBallBridge.winmd" target="lib\netstandard2.0\arm64"/> 
+    <file src=".\ARM64\Release\InkBallBridge\InkBallBridge.dll" target="lib\netstandard2.0\arm64"/>
+    <file src=".\ARM64\Release\InkBallBridge\InkBallBridge.dll" target="runtimes\arm64\native"/>
+    <file src=".\ARM64\Release\InkBallBridge\InkBallBridge.pri" target="runtimes\arm64\native"/>
+
+    <file src=".\x64\Release\InkBallBridge\InkBallBridge.winmd" target="lib\netstandard2.0\x64"/> 
+    <file src=".\x64\Release\InkBallBridge\InkBallBridge.dll" target="lib\netstandard2.0\x64"/>
+    <file src=".\x64\Release\InkBallBridge\InkBallBridge.dll" target="runtimes\x64\native"/>
+    <file src=".\x64\Release\InkBallBridge\InkBallBridge.pri" target="runtimes\x64\native"/>
+
+    <file src=".\x64\Release\InkBallBridge\InkBallBridge.winmd" target="lib\netstandard2.0\x86"/> 
+    <file src=".\Release\InkBallBridge\InkBallBridge.dll" target="lib\netstandard2.0\x86"/>
+    <file src=".\Release\InkBallBridge\InkBallBridge.dll" target="runtimes\x86\native"/>
+    <file src=".\Release\InkBallBridge\InkBallBridge.pri" target="runtimes\x86\native"/>
+    <!-- .meta -->
+    <file src=".\meta\x86\InkBallBridge.dll.meta" target="lib\netstandard2.0\x86"/>
+    <file src=".\meta\x64\InkBallBridge.dll.meta" target="lib\netstandard2.0\x64"/>
+    <file src=".\meta\arm64\InkBallBridge.dll.meta" target="lib\netstandard2.0\arm64"/>
+    <file src=".\meta\arm\InkBallBridge.dll.meta" target="lib\netstandard2.0\arm"/>
+    <!-- .targets -->
+    <file src="InkBallBridge.targets" target="build\native"/>
+    
+  </files>
+</package>
