@@ -1,5 +1,4 @@
-# IL2CPPToWinRTBridge
-## # IL2CPPToWinRTBridge
+## IL2CPPToWinRTBridge
 这个是原始的IL2CPP(Unity)与WinRT(UWP)的通讯桥  
 - 初始化及接收消息
   - Unity中你需要新建一个类继承`IIL2CPPBridge`,并实现其接口`Connect`,该接口在Unity中负责接收消息  
@@ -49,5 +48,10 @@
     }
     ```
 ## InkBallBridge
-这是[InkBall](https://github.com/MicaGames)项目的专用通讯桥
-具体之间看源码的注释,写的很清楚
+这是[InkBall](https://github.com/MicaGames)项目的专用通讯桥  
+
+具体之间看源码的注释,写的很清楚  
+
+与原始项目的改动如下:
+- 命名空间`BridgeBootstrapper`->统一`InkBallBridge`
+- 通讯信息类型`string`->`BridgeMessage`
