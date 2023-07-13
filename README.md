@@ -53,5 +53,5 @@
 具体之间看源码的注释,写的很清楚  
 
 与原始项目的改动如下:
-- 命名空间`BridgeBootstrapper`->统一`InkBallBridge`
+- 命名空间`IL2CPPToWinRTBridge`->统一`InkBallBridge`
 - 通讯信息类型`string`->`BridgeMessage`
