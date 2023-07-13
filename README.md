@@ -52,7 +52,7 @@
 
 | InkBall | InkBallBridge |
 | --- | --- |
-| 最新 | nuget |
+| 最新 |  ![img](https://img.shields.io/nuget/v/InkBallBridge?color=blue)|
 
 `Unity`使用`nuget`安装,`UWP`直接引用`Unity`的`winmd`
 具体之间看源码的注释,写的很清楚  
