@@ -33,10 +33,51 @@ namespace InkBallBridge
         /// </summary>
         Get,
         /// <summary>
-        /// 球仓
+        /// 球数量
         /// </summary>
         BallCounts,
-
+        /// <summary>
+        /// 球信息
+        /// </summary>
+        Ball,
+        /// <summary>
+        /// 往游戏里添加球
+        /// </summary>
+        BallLoad,
+    };
+    public enum class BallType
+    {
+        White,
+        Blue,
+        Green,
+        Orange,
+        Yellow,
+    };
+    public ref class BallInfo sealed
+    {
+    private:
+        int m_index;
+        BallType m_type;
+    public:
+        BallInfo(int _index, BallType _type)
+        {
+            m_index = _index;
+            m_type = _type; 
+        }
+        /// <summary>
+        /// 类型
+        /// </summary>
+        property BallType Type
+        {
+            BallType get() { return m_type; }
+        }
+        /// <summary>
+        /// 索引
+        /// </summary>
+        property int Index
+        {
+            int get() { return m_index; }
+        }
     };
     public ref class BridgeMessage sealed
     {

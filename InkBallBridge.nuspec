@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
     <id>InkBallBridge</id>
-    <version>0.1.0</version>
+    <version>0.1.2</version>
     <title>InkBallBridge</title>
     <authors>kitUIN</authors>
     <owners>kitUIN</owners>
@@ -20,6 +20,7 @@
   <files>
     <!-- WinMd and IntelliSense files -->
     <file src=".\x64\Release\InkBallBridge\InkBallBridge.winmd" target="lib\uap10.0"/>
+    <file src=".\x64\Release\InkBallBridge\InkBallBridge.xml" target="lib\uap10.0"/>
     <!-- DLLs and resources -->
     <file src=".\x64\Release\InkBallBridge\InkBallBridge.winmd" target="lib\netstandard2.0\arm"/> 
     <file src=".\ARM\Release\InkBallBridge\InkBallBridge.dll" target="lib\netstandard2.0\arm"/>

@@ -3,8 +3,6 @@
     <PropertyGroup>
         <InkBallBridge-Platform Condition="'$(Platform)' == 'Win32'">x86</InkBallBridge-Platform>
         <InkBallBridge-Platform Condition="'$(Platform)' != 'Win32'">$(Platform)</InkBallBridge-Platform>
-        <InkBallBridge-Configuration Condition="'$(Configuration)' != 'AnyCPU'">$(Configuration)</InkBallBridge-Platform>
-        <InkBallBridge-Configuration Condition="'$(Configuration)' == 'AnyCPU'">Release</InkBallBridge-Platform>
     </PropertyGroup>
     <ItemGroup Condition="'$(TargetPlatformIdentifier)' == 'UAP'">
         <Reference Include="$(MSBuildThisFileDirectory)..\..\lib\uap10.0\InkBallBridge.winmd">

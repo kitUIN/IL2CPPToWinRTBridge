@@ -25,6 +25,9 @@ namespace InkBallBridge
     public ref class Bridge sealed
     {
     public:
+        /// <summary>
+        /// 仅Unity(Il2Cpp)程序中获取
+        /// </summary>
         static IWinRTBridge^ GetWinRTBridge()
         {
             return m_WinRTBridge;
@@ -36,6 +39,9 @@ namespace InkBallBridge
         {
             m_WinRTBridge = WinRTBridge;
         }
+        /// <summary>
+        /// 仅WinRT程序中获取
+        /// </summary>
         static IIL2CPPBridge^ GetIL2CPPBridge()
         {
             return m_IL2CPPBridge;
